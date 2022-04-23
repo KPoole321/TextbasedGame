@@ -82,8 +82,8 @@ def main():
                         print('I hope you enjoyed the game!')
                         print('Gooodbye.')
                         break
-                    else:
-                        print("Sorry, try that command again.")
+                    if PickupItem != str('GET ' + item):
+                        print('Sorry, try that command again.')
 
         #The player enters the room with the Dragon slayer with all 6 items than the loop will break congratulating them on winning!
         if item == 'Dragon Slayer':
